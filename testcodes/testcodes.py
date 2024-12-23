@@ -3,7 +3,7 @@ import googlemaps
 from googlemaps.convert import decode_polyline
 
 # Initialize Google Maps client with your API key
-api_key = "AIzaSyA1Kz-U4z5JTBOLDFGQQKAYTwZzPLaxF6E"  # Get it from https://console.cloud.google.com/
+api_key = "api_key"  # Get it from https://console.cloud.google.com/
 gmaps = googlemaps.Client(key=api_key)
 
 # Define start and end locations
