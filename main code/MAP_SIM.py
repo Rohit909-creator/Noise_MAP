@@ -17,7 +17,11 @@ class Map:
         if self.directions == None:
             print("route function not called")
             return
-        mymap = folium.Map(location=[28.7041, 77.1025], zoom_start=12)
+        start_lat = self.directions[0]['legs'][0]['start_location']['lat']
+        start_lng = self.directions[0]['legs'][0]['start_location']['lng']
+        end_lat = self.directions[0]['legs'][0]['end_location']['lat']
+        end_lng = self.directions[0]['legs'][0]['end_location']['lng']
+        mymap = folium.Map(location=[start_lat, start_lng], zoom_start=12)
         colors = ["blue", "green", "purple", "orange", "red"]  # Different colors for different routes
         for idx, route in enumerate(self.directions):
             # Extract the route geometry (polyline)
@@ -61,12 +65,9 @@ class Map:
             ).add_to(mymap)
 
         # Add start and end markers
-        start_lat = self.directions[0]['legs'][0]['start_location']['lat']
-        start_lng = self.directions[0]['legs'][0]['start_location']['lng']
-        end_lat = self.directions[0]['legs'][0]['end_location']['lat']
-        end_lng = self.directions[0]['legs'][0]['end_location']['lng']
+        
         folium.Marker(location=[start_lat, start_lng], popup="Start: Delhi").add_to(mymap)
-        folium.Marker(location=[end_lat, end_lng], popup="End: Noida").add_to(mymap)
+        folium.Marker(location=[end_lat, end_lng], popup="End: Old Delhi").add_to(mymap)
         # Save the map to an HTML file
         mymap.save("google_multiple_routes_map.html")
         file_path = "index.html"
