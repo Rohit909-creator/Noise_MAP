@@ -66,8 +66,8 @@ class Map:
 
         # Add start and end markers
         
-        folium.Marker(location=[start_lat, start_lng], popup="Start: Delhi").add_to(mymap)
-        folium.Marker(location=[end_lat, end_lng], popup="End: Old Delhi").add_to(mymap)
+        folium.Marker(location=[start_lat, start_lng], popup=f"Start: {self.start_location}").add_to(mymap)
+        folium.Marker(location=[end_lat, end_lng], popup=f"End: {self.end_location}").add_to(mymap)
         # Save the map to an HTML file
         mymap.save("./templates/noise_map.html")
         file_path = "./templates/noise_map.html"
