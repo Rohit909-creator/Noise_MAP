@@ -2,7 +2,7 @@ import folium
 import googlemaps
 from googlemaps.convert import decode_polyline
 import random
-
+import webbrowser
 class Map:
 
     def __init__(self, start_location = "Delhi, India", end_location = "Old Delhi, India", probs=0.5):
@@ -61,10 +61,16 @@ class Map:
             ).add_to(mymap)
 
         # Add start and end markers
-        folium.Marker(location=[28.7041, 77.1025], popup="Start: Delhi").add_to(mymap)
-        folium.Marker(location=[28.5355, 77.3910], popup="End: Noida").add_to(mymap)
+        start_lat = self.directions[0]['legs'][0]['start_location']['lat']
+        start_lng = self.directions[0]['legs'][0]['start_location']['lng']
+        end_lat = self.directions[0]['legs'][0]['end_location']['lat']
+        end_lng = self.directions[0]['legs'][0]['end_location']['lng']
+        folium.Marker(location=[start_lat, start_lng], popup="Start: Delhi").add_to(mymap)
+        folium.Marker(location=[end_lat, end_lng], popup="End: Noida").add_to(mymap)
         # Save the map to an HTML file
         mymap.save("google_multiple_routes_map.html")
+        file_path = "index.html"
+        webbrowser.open(file_path)
 
     def show(self):
         pass
