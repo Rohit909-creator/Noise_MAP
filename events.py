@@ -1,7 +1,6 @@
 import folium
 import googlemaps
 import requests
-import random
 
 # Function to fetch nearby events using Google Places API
 def fetch_nearby_events(api_key, location, radius=5000, keyword="event hall|auditorium|grounds"):
@@ -27,16 +26,6 @@ def fetch_nearby_events(api_key, location, radius=5000, keyword="event hall|audi
     else:
         print("Error fetching events:", response.status_code)
         return []
-
-# Function to generate random noise data points
-def generate_noise_data(center_lat, center_lng, count):
-    noise_data = []
-    for _ in range(count):
-        random_lat = center_lat + random.uniform(-0.05, 0.05)
-        random_lng = center_lng + random.uniform(-0.05, 0.05)
-        random_noise = random.randint(40, 100)  # Noise levels in dB (40-100)
-        noise_data.append((random_lat, random_lng, random_noise))
-    return noise_data
 
 # Initialize Google Maps client with your API key
 api_key = "AIzaSyA1Kz-U4z5JTBOLDFGQQKAYTwZzPLaxF6E"  # Replace with your API key
@@ -85,48 +74,8 @@ for name, address, rating, lat, lng in end_events:
         icon=folium.Icon(color="purple", icon="info-sign")
     ).add_to(mymap)
 
-# Generate and add noise data points near the start location
-start_noise = generate_noise_data(start_lat, start_lng, 20)
-for lat, lng, noise_level in start_noise:
-    if noise_level <= 60:
-        color = 'green'  # Low noise
-    elif 60 < noise_level <= 80:
-        color = 'orange'  # Moderate noise
-    else:
-        color = 'red'  # High noise
-    
-    folium.CircleMarker(
-        location=[lat, lng],
-        radius=7,
-        color=color,
-        fill=True,
-        fill_color=color,
-        fill_opacity=0.7,
-        popup=f"Noise Level: {noise_level} dB"
-    ).add_to(mymap)
-
-# Generate and add noise data points near the end location
-end_noise = generate_noise_data(end_lat, end_lng, 20)
-for lat, lng, noise_level in end_noise:
-    if noise_level <= 60:
-        color = 'green'  # Low noise
-    elif 60 < noise_level <= 80:
-        color = 'orange'  # Moderate noise
-    else:
-        color = 'red'  # High noise
-    
-    folium.CircleMarker(
-        location=[lat, lng],
-        radius=7,
-        color=color,
-        fill=True,
-        fill_color=color,
-        fill_opacity=0.7,
-        popup=f"Noise Level: {noise_level} dB"
-    ).add_to(mymap)
-
 # Save the map to an HTML file
-mymap.save("events_and_noise_map.html")
+mymap.save("events_map.html")
 
 # Print success message
-print("Map with events and noise data saved as 'events_and_noise_map.html'. Open this file to view the map.")
+print("Map with events saved as 'events_map.html'. Open this file to view the map.")

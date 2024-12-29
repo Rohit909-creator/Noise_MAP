@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_104d85feb3a983ffd96a328cc75e96aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_104d85feb3a983ffd96a328cc75e96aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_104d85feb3a983ffd96a328cc75e96aa = L.map(
+                "map_104d85feb3a983ffd96a328cc75e96aa",
+                {
+                    center: [28.61978765, 77.24675835],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0021824f86b8f1c840025f938e0f0d5d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0021824f86b8f1c840025f938e0f0d5d.addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var marker_5383bde498ecdeb6f3fcf76c562f13fd = L.marker(
+                [28.7040592, 77.10249019999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_185bf531737393d43b82865c72598f58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5383bde498ecdeb6f3fcf76c562f13fd.setIcon(icon_185bf531737393d43b82865c72598f58);
+        
+    
+        var popup_9d227823d2de1394c5532b8e2dabc246 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ee91312f9746fb29fb7e78ff81a02dd = $(`<div id="html_7ee91312f9746fb29fb7e78ff81a02dd" style="width: 100.0%; height: 100.0%;">Start: Delhi</div>`)[0];
+                popup_9d227823d2de1394c5532b8e2dabc246.setContent(html_7ee91312f9746fb29fb7e78ff81a02dd);
+            
+        
+
+        marker_5383bde498ecdeb6f3fcf76c562f13fd.bindPopup(popup_9d227823d2de1394c5532b8e2dabc246)
+        ;
+
+        
+    
+    
+            var marker_eb0d12006fc65c48991ed89e37f77738 = L.marker(
+                [28.5355161, 77.3910265],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_34a13941ad37d47ac5da3ee68cffb09a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eb0d12006fc65c48991ed89e37f77738.setIcon(icon_34a13941ad37d47ac5da3ee68cffb09a);
+        
+    
+        var popup_87abefc705adc2c85184d7b6dad9cc8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b734496bf361d72b4347f56bcc396b9 = $(`<div id="html_0b734496bf361d72b4347f56bcc396b9" style="width: 100.0%; height: 100.0%;">End: Noida</div>`)[0];
+                popup_87abefc705adc2c85184d7b6dad9cc8b.setContent(html_0b734496bf361d72b4347f56bcc396b9);
+            
+        
+
+        marker_eb0d12006fc65c48991ed89e37f77738.bindPopup(popup_87abefc705adc2c85184d7b6dad9cc8b)
+        ;
+
+        
+    
+    
+            var marker_29a5c0e473922feaa05af0138a37b1c5 = L.marker(
+                [28.6799685, 77.09406179999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_af3ba3bf2f282c784dd6d36f0aab959c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_29a5c0e473922feaa05af0138a37b1c5.setIcon(icon_af3ba3bf2f282c784dd6d36f0aab959c);
+        
+    
+        var popup_f593c5e7e7062779e96b279bc5eaf7d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1718154f6737de7297aa836150273c5 = $(`<div id="html_d1718154f6737de7297aa836150273c5" style="width: 100.0%; height: 100.0%;">Event: The Maidens Crown Banquet Hall, Peeragarhi Address: B-1 Near Peera Garhi Metro Station Peeragarhi, Udyog Nagar, New Delhi Rating: 4.7</div>`)[0];
+                popup_f593c5e7e7062779e96b279bc5eaf7d2.setContent(html_d1718154f6737de7297aa836150273c5);
+            
+        
+
+        marker_29a5c0e473922feaa05af0138a37b1c5.bindPopup(popup_f593c5e7e7062779e96b279bc5eaf7d2)
+        ;
+
+        
+    
+    
+            var marker_b9e0857dc50b58fb904c85e991cfc3fd = L.marker(
+                [28.6884532, 77.1025495],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_fc4eacf3fa98c59cb866a132c2ca9658 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b9e0857dc50b58fb904c85e991cfc3fd.setIcon(icon_fc4eacf3fa98c59cb866a132c2ca9658);
+        
+    
+        var popup_ddd1fa1d5286234f60d685cc6d33d4c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bb206648d0944a2c476e1366125c5fe = $(`<div id="html_6bb206648d0944a2c476e1366125c5fe" style="width: 100.0%; height: 100.0%;">Event: Golden Apple Mansion : Best Banquet Hall | Best Wedding Venues | Pitampura North Delhi Address: Road no 43, near Hotel LA, Phase 2, Pocket D, Industrial Area, Pitampura, Delhi Rating: 4.2</div>`)[0];
+                popup_ddd1fa1d5286234f60d685cc6d33d4c4.setContent(html_6bb206648d0944a2c476e1366125c5fe);
+            
+        
+
+        marker_b9e0857dc50b58fb904c85e991cfc3fd.bindPopup(popup_ddd1fa1d5286234f60d685cc6d33d4c4)
+        ;
+
+        
+    
+    
+            var marker_5e42362e0c802d492a2aa9d55565fa8d = L.marker(
+                [28.6808877, 77.08724099999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_26b95bc308b7e98bb375fd579e59f7a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5e42362e0c802d492a2aa9d55565fa8d.setIcon(icon_26b95bc308b7e98bb375fd579e59f7a4);
+        
+    
+        var popup_74c8e63f8a18f8223adfbee8a4edbb3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caff503bd8297b8a09bd0f8c01280ff6 = $(`<div id="html_caff503bd8297b8a09bd0f8c01280ff6" style="width: 100.0%; height: 100.0%;">Event: Precious Forever Banquet Hall, Peeragarhi Address: D, 9, Rohtak Rd, Udyog Nagar, Mangolpuri, Delhi Rating: 4.8</div>`)[0];
+                popup_74c8e63f8a18f8223adfbee8a4edbb3c.setContent(html_caff503bd8297b8a09bd0f8c01280ff6);
+            
+        
+
+        marker_5e42362e0c802d492a2aa9d55565fa8d.bindPopup(popup_74c8e63f8a18f8223adfbee8a4edbb3c)
+        ;
+
+        
+    
+    
+            var marker_ed0be77968c292ae51c29037daf4243f = L.marker(
+                [28.7345215, 77.1253262],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_0f93edec79979c5cb4db0bf261ea0baa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ed0be77968c292ae51c29037daf4243f.setIcon(icon_0f93edec79979c5cb4db0bf261ea0baa);
+        
+    
+        var popup_945c9ed3958fe315a4a8c81617f7f013 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f23ba278005b56311c347cb48045d795 = $(`<div id="html_f23ba278005b56311c347cb48045d795" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in North Delhi Address: A-7, near Rockfield Public School, Pocket 5, Sector 16, Rohini, New Delhi, Delhi Rating: 5</div>`)[0];
+                popup_945c9ed3958fe315a4a8c81617f7f013.setContent(html_f23ba278005b56311c347cb48045d795);
+            
+        
+
+        marker_ed0be77968c292ae51c29037daf4243f.bindPopup(popup_945c9ed3958fe315a4a8c81617f7f013)
+        ;
+
+        
+    
+    
+            var marker_8eacd5844c0b597ca1c8674b80a4dae7 = L.marker(
+                [28.6844535, 77.124129],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_079d22c1bbdab7927dba3c2ce7295fac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8eacd5844c0b597ca1c8674b80a4dae7.setIcon(icon_079d22c1bbdab7927dba3c2ce7295fac);
+        
+    
+        var popup_a0b7767716b449dee4ea72905b957e79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d177a49ce9be3dd1d8dd58182f3d74 = $(`<div id="html_85d177a49ce9be3dd1d8dd58182f3d74" style="width: 100.0%; height: 100.0%;">Event: Brahmastra Grand : Best Banquet Hall | Banquet Hall | Best Wedding venues | North Delhi Address: wz 107, A/B, Ground Floor, Rishi Nagar, Rani Bagh, Pitampura, Delhi Rating: 5</div>`)[0];
+                popup_a0b7767716b449dee4ea72905b957e79.setContent(html_85d177a49ce9be3dd1d8dd58182f3d74);
+            
+        
+
+        marker_8eacd5844c0b597ca1c8674b80a4dae7.bindPopup(popup_a0b7767716b449dee4ea72905b957e79)
+        ;
+
+        
+    
+    
+            var marker_17140baaa28317f50124db53465d37b1 = L.marker(
+                [28.716356, 77.1139962],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_bb0c2dfff5d121e1194cf1dc5857fa0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_17140baaa28317f50124db53465d37b1.setIcon(icon_bb0c2dfff5d121e1194cf1dc5857fa0e);
+        
+    
+        var popup_4f6ae76f6ad1cce1ec6e3bf85ec18e53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce57b85db15184ec949adeef14d485b8 = $(`<div id="html_ce57b85db15184ec949adeef14d485b8" style="width: 100.0%; height: 100.0%;">Event: Royal Pepper Banquet hall - Sector 10, Rohini Address: Pillar No. 434, D-Mall, 2nd Floor Sector 10 Near Rohini West Metro Station, Rohini, Delhi Rating: 4.7</div>`)[0];
+                popup_4f6ae76f6ad1cce1ec6e3bf85ec18e53.setContent(html_ce57b85db15184ec949adeef14d485b8);
+            
+        
+
+        marker_17140baaa28317f50124db53465d37b1.bindPopup(popup_4f6ae76f6ad1cce1ec6e3bf85ec18e53)
+        ;
+
+        
+    
+    
+            var marker_6ea2805402f41d19697c1ce8cf211aa3 = L.marker(
+                [28.6800273, 77.0936913],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_442d682e4a404b422c83ab1cef664d7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6ea2805402f41d19697c1ce8cf211aa3.setIcon(icon_442d682e4a404b422c83ab1cef664d7e);
+        
+    
+        var popup_7f02748c0b44556796601b3a17a6463e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_136c87f31b2e0162ea098cecdc1cbadc = $(`<div id="html_136c87f31b2e0162ea098cecdc1cbadc" style="width: 100.0%; height: 100.0%;">Event: Royal Pepper Banquet hall - Peeragarhi Address: metro, Peeragarhi, E-1, Rohtak - Delhi Rd, near Peeragarhi, Udyog Nagar, industrial area, New Delhi, Delhi Rating: 4.7</div>`)[0];
+                popup_7f02748c0b44556796601b3a17a6463e.setContent(html_136c87f31b2e0162ea098cecdc1cbadc);
+            
+        
+
+        marker_6ea2805402f41d19697c1ce8cf211aa3.bindPopup(popup_7f02748c0b44556796601b3a17a6463e)
+        ;
+
+        
+    
+    
+            var marker_bb02446abf89b8b04d2ee1decccf1745 = L.marker(
+                [28.7363054, 77.12837119999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_0c68c7f1ce414b22c4b6a7b314d646b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bb02446abf89b8b04d2ee1decccf1745.setIcon(icon_0c68c7f1ce414b22c4b6a7b314d646b8);
+        
+    
+        var popup_deb56793e205031edbc890ef213cc4d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_867897c123ce2ca612b1c06208a41897 = $(`<div id="html_867897c123ce2ca612b1c06208a41897" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in Rohini Address: B-1, opp. to petrol pump, Pocket 1, Sector 16, Rohini, New Delhi, Delhi Rating: 5</div>`)[0];
+                popup_deb56793e205031edbc890ef213cc4d3.setContent(html_867897c123ce2ca612b1c06208a41897);
+            
+        
+
+        marker_bb02446abf89b8b04d2ee1decccf1745.bindPopup(popup_deb56793e205031edbc890ef213cc4d3)
+        ;
+
+        
+    
+    
+            var marker_846f293a63245a0d65990aafa89de223 = L.marker(
+                [28.679503, 77.0896819],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_4ad576293c545ca2453a7edcaf6e9fc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_846f293a63245a0d65990aafa89de223.setIcon(icon_4ad576293c545ca2453a7edcaf6e9fc4);
+        
+    
+        var popup_eb18753a8026cbe1e5047c8361cd186f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dd0b67a9f36b68babf42003a36f6288 = $(`<div id="html_2dd0b67a9f36b68babf42003a36f6288" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in Paschim Vihar Address: Block GH 16, Block A 2, Mianwali Nagar, Paschim Vihar, New Delhi, Delhi Rating: 5</div>`)[0];
+                popup_eb18753a8026cbe1e5047c8361cd186f.setContent(html_2dd0b67a9f36b68babf42003a36f6288);
+            
+        
+
+        marker_846f293a63245a0d65990aafa89de223.bindPopup(popup_eb18753a8026cbe1e5047c8361cd186f)
+        ;
+
+        
+    
+    
+            var marker_89e63eac326dbc42c28dac60f5962fec = L.marker(
+                [28.6796219, 77.14918109999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_b5288d0abf47a013f1a5e3d70e2a3e58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_89e63eac326dbc42c28dac60f5962fec.setIcon(icon_b5288d0abf47a013f1a5e3d70e2a3e58);
+        
+    
+        var popup_1d17bb4cf1151250bcf3b6d6dc7090f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ccb8ec1ad41fc0e6ce5a8482aae606b = $(`<div id="html_1ccb8ec1ad41fc0e6ce5a8482aae606b" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in Tri Nagar Address: block a2, B, Britannia Chowk, 52, Lawrence Rd, Rampura Industrial Area, Tri Nagar, New Delhi, Delhi Rating: 4.5</div>`)[0];
+                popup_1d17bb4cf1151250bcf3b6d6dc7090f1.setContent(html_1ccb8ec1ad41fc0e6ce5a8482aae606b);
+            
+        
+
+        marker_89e63eac326dbc42c28dac60f5962fec.bindPopup(popup_1d17bb4cf1151250bcf3b6d6dc7090f1)
+        ;
+
+        
+    
+    
+            var marker_03710ac36b1551edf22c1cbc9e3daf2c = L.marker(
+                [28.6613354, 77.15020489999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_0479553fdcf1471dad391970bedeb08a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_03710ac36b1551edf22c1cbc9e3daf2c.setIcon(icon_0479553fdcf1471dad391970bedeb08a);
+        
+    
+        var popup_1afdf19fc8c6f99b4bd9231c7a94085b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_500e2c0eed0c3814944b6b26abde92fd = $(`<div id="html_500e2c0eed0c3814944b6b26abde92fd" style="width: 100.0%; height: 100.0%;">Event: Pristine Palace Boutique Banquet : Banquet Hall | Best Banquet Hall | Wedding Venue | Moti Nagar Delhi Address: 16 A, near Haldiram, Moti Nagar, Karampura Industrial Area, Karam Pura, New Delhi, Delhi Rating: 4.8</div>`)[0];
+                popup_1afdf19fc8c6f99b4bd9231c7a94085b.setContent(html_500e2c0eed0c3814944b6b26abde92fd);
+            
+        
+
+        marker_03710ac36b1551edf22c1cbc9e3daf2c.bindPopup(popup_1afdf19fc8c6f99b4bd9231c7a94085b)
+        ;
+
+        
+    
+    
+            var marker_e2c7259b0a4f2754abde5aa69b575c85 = L.marker(
+                [28.7451952, 77.11517429999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_3309ca18f7aa7fded8e7c4bb71d0fd49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e2c7259b0a4f2754abde5aa69b575c85.setIcon(icon_3309ca18f7aa7fded8e7c4bb71d0fd49);
+        
+    
+        var popup_f730a6e1cb69d19d86c878d9a8c60f65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c32b2e893ef67d41831fb38f6c1850c = $(`<div id="html_1c32b2e893ef67d41831fb38f6c1850c" style="width: 100.0%; height: 100.0%;">Event: ARYAA BANQUET Address: Aryaa Banquet Hall, Vishal Palace, near DTU, Shahbad Daulatpur Village, Delhi Rating: 4.8</div>`)[0];
+                popup_f730a6e1cb69d19d86c878d9a8c60f65.setContent(html_1c32b2e893ef67d41831fb38f6c1850c);
+            
+        
+
+        marker_e2c7259b0a4f2754abde5aa69b575c85.bindPopup(popup_f730a6e1cb69d19d86c878d9a8c60f65)
+        ;
+
+        
+    
+    
+            var marker_91fc55838de28f5257b7ccded011cec8 = L.marker(
+                [28.68101589999999, 77.08503069999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_74795b95a978aeaed9c6579bbe24f85c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_91fc55838de28f5257b7ccded011cec8.setIcon(icon_74795b95a978aeaed9c6579bbe24f85c);
+        
+    
+        var popup_024825f5325fa4b3a7d958759a7926eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_983dc8620667c44f460aeb65815c56f2 = $(`<div id="html_983dc8620667c44f460aeb65815c56f2" style="width: 100.0%; height: 100.0%;">Event: Euphoria Banquet Address: F-3, opposite Metro Pillar No 310, Udyog Nagar, Industrial Area, Peeragarhi, Delhi Rating: 4.2</div>`)[0];
+                popup_024825f5325fa4b3a7d958759a7926eb.setContent(html_983dc8620667c44f460aeb65815c56f2);
+            
+        
+
+        marker_91fc55838de28f5257b7ccded011cec8.bindPopup(popup_024825f5325fa4b3a7d958759a7926eb)
+        ;
+
+        
+    
+    
+            var marker_9eebdea771cb7fca2911ed19ff14eacc = L.marker(
+                [28.6766652, 77.1152341],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_0205005ee4988d3b790a4b6077a35ea3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9eebdea771cb7fca2911ed19ff14eacc.setIcon(icon_0205005ee4988d3b790a4b6077a35ea3);
+        
+    
+        var popup_7d8e046180ddbd942e74fa71771e95c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b000cd4f326a3d00dc47fc606a3ad18 = $(`<div id="html_4b000cd4f326a3d00dc47fc606a3ad18" style="width: 100.0%; height: 100.0%;">Event: Forever Banquet Address: 20, Paschim Vihar Extn, Rohtak Rd, opposite Metro Pillar 193, New Delhi Rating: 4.6</div>`)[0];
+                popup_7d8e046180ddbd942e74fa71771e95c9.setContent(html_4b000cd4f326a3d00dc47fc606a3ad18);
+            
+        
+
+        marker_9eebdea771cb7fca2911ed19ff14eacc.bindPopup(popup_7d8e046180ddbd942e74fa71771e95c9)
+        ;
+
+        
+    
+    
+            var marker_766ca56379488748fd75962b8cb6ea81 = L.marker(
+                [28.69648179999999, 77.1528529],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_5b9aa31bbc7be27302d2e910af70e951 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_766ca56379488748fd75962b8cb6ea81.setIcon(icon_5b9aa31bbc7be27302d2e910af70e951);
+        
+    
+        var popup_ff0e58d70614c0c8345dfa86c484a9f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff0541da5252b5bfb3b98e127485dc0a = $(`<div id="html_ff0541da5252b5bfb3b98e127485dc0a" style="width: 100.0%; height: 100.0%;">Event: Grande Banquet Hall Pitampura Rohini Delhi Address: M5W3+H4X, Ring Road, Near Pitampura Metro Station, Pitampura, New Delhi Rating: 4.1</div>`)[0];
+                popup_ff0e58d70614c0c8345dfa86c484a9f7.setContent(html_ff0541da5252b5bfb3b98e127485dc0a);
+            
+        
+
+        marker_766ca56379488748fd75962b8cb6ea81.bindPopup(popup_ff0e58d70614c0c8345dfa86c484a9f7)
+        ;
+
+        
+    
+    
+            var marker_f5f809bb23b320006a532111b78123d8 = L.marker(
+                [28.703746, 77.107889],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_1e9b6213861d70037049dc0ccbd44f63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f5f809bb23b320006a532111b78123d8.setIcon(icon_1e9b6213861d70037049dc0ccbd44f63);
+        
+    
+        var popup_c835e6824ba0fd72f7243bc3cebce099 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e982c9efa5c2c7a9968bbdb385a377c3 = $(`<div id="html_e982c9efa5c2c7a9968bbdb385a377c3" style="width: 100.0%; height: 100.0%;">Event: Royal Pepper Banquet hall - Sector 3, Rohini Address: 1, Community Centre, Rohini Sec 3 Near JIMS College and HP Petrol Pump, New Delhi Rating: 4.5</div>`)[0];
+                popup_c835e6824ba0fd72f7243bc3cebce099.setContent(html_e982c9efa5c2c7a9968bbdb385a377c3);
+            
+        
+
+        marker_f5f809bb23b320006a532111b78123d8.bindPopup(popup_c835e6824ba0fd72f7243bc3cebce099)
+        ;
+
+        
+    
+    
+            var marker_e1c337521a2f265c407ddc95b410c47d = L.marker(
+                [28.7048604, 77.14847139999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_f4703470451888638bdd0e39924da797 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e1c337521a2f265c407ddc95b410c47d.setIcon(icon_f4703470451888638bdd0e39924da797);
+        
+    
+        var popup_12863f27fca36ceaef289c01e3cfb9b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31d1b38c776f92461d207f8bccd79faa = $(`<div id="html_31d1b38c776f92461d207f8bccd79faa" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in Pitampura Address: MP Mall, near, Gopal Mandir Marg, Block MP, Poorvi Pitampura, Pitampura, New Delhi, Delhi Rating: 4.8</div>`)[0];
+                popup_12863f27fca36ceaef289c01e3cfb9b6.setContent(html_31d1b38c776f92461d207f8bccd79faa);
+            
+        
+
+        marker_e1c337521a2f265c407ddc95b410c47d.bindPopup(popup_12863f27fca36ceaef289c01e3cfb9b6)
+        ;
+
+        
+    
+    
+            var marker_c3662d39af240d00722521849952b9cc = L.marker(
+                [28.6795264, 77.142713],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_788238b44b971d7833512d150f2de8f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c3662d39af240d00722521849952b9cc.setIcon(icon_788238b44b971d7833512d150f2de8f0);
+        
+    
+        var popup_796264ca432c79a0f028d4e792e3a0ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4493c69bf18eb5ed379aca8e470663a2 = $(`<div id="html_4493c69bf18eb5ed379aca8e470663a2" style="width: 100.0%; height: 100.0%;">Event: Seven Seas Banquet & Lawn Address: Britania Chowk, B-28, Lawrence Rd, Dr Lohia Industrial Area, Indira Colony, Shakurpur, New Delhi, Delhi Rating: 4.2</div>`)[0];
+                popup_796264ca432c79a0f028d4e792e3a0ed.setContent(html_4493c69bf18eb5ed379aca8e470663a2);
+            
+        
+
+        marker_c3662d39af240d00722521849952b9cc.bindPopup(popup_796264ca432c79a0f028d4e792e3a0ed)
+        ;
+
+        
+    
+    
+            var marker_98fa0493be3d6442ebb4f449f277de01 = L.marker(
+                [28.657726, 77.148609],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_ae6b6eef20d56230b9a91b392971bfcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98fa0493be3d6442ebb4f449f277de01.setIcon(icon_ae6b6eef20d56230b9a91b392971bfcb);
+        
+    
+        var popup_fa5a7bd0b57fa0ea432b9a43a35b93d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dec45397b0e18050b96a53ffcaba06a = $(`<div id="html_3dec45397b0e18050b96a53ffcaba06a" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in Moti Nagar Address: 69/6A, Najafgarh Rd, Moti Nagar, Block C, Najafgarh Road Industrial Area, New Delhi, Delhi Rating: 3.5</div>`)[0];
+                popup_fa5a7bd0b57fa0ea432b9a43a35b93d5.setContent(html_3dec45397b0e18050b96a53ffcaba06a);
+            
+        
+
+        marker_98fa0493be3d6442ebb4f449f277de01.bindPopup(popup_fa5a7bd0b57fa0ea432b9a43a35b93d5)
+        ;
+
+        
+    
+    
+            var marker_9cb2c24f501397c4fb2e602272d4cca3 = L.marker(
+                [28.6676822, 77.11506229999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_b1a6d421561b55a3aa9fbd70cbe7682a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9cb2c24f501397c4fb2e602272d4cca3.setIcon(icon_b1a6d421561b55a3aa9fbd70cbe7682a);
+        
+    
+        var popup_e43d7665815e95e871abf76c2a65dd6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_254b6f92b9e8b9c7f2c56bbffd3e7afc = $(`<div id="html_254b6f92b9e8b9c7f2c56bbffd3e7afc" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls in Punjabi Bagh Address: Lawn No. 2, Narayana Vihar, Pocket 2, Punjabi Bagh, New Delhi, Delhi Rating: 5</div>`)[0];
+                popup_e43d7665815e95e871abf76c2a65dd6d.setContent(html_254b6f92b9e8b9c7f2c56bbffd3e7afc);
+            
+        
+
+        marker_9cb2c24f501397c4fb2e602272d4cca3.bindPopup(popup_e43d7665815e95e871abf76c2a65dd6d)
+        ;
+
+        
+    
+    
+            var marker_71757ce71e4a24af2046d4b7441c4c1d = L.marker(
+                [28.5142949, 77.3759828],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_5ed4c83faa7c33a420b061f629cc6b24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_71757ce71e4a24af2046d4b7441c4c1d.setIcon(icon_5ed4c83faa7c33a420b061f629cc6b24);
+        
+    
+        var popup_865f506b793b245375f461cfe051b98e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45449f8c0bc3f817d9e9e2af0b394391 = $(`<div id="html_45449f8c0bc3f817d9e9e2af0b394391" style="width: 100.0%; height: 100.0%;">Event: Ananda Bliss Address: Ananda Bliss, near Gate no 6, Block B, Sector 132, Noida Rating: 4.3</div>`)[0];
+                popup_865f506b793b245375f461cfe051b98e.setContent(html_45449f8c0bc3f817d9e9e2af0b394391);
+            
+        
+
+        marker_71757ce71e4a24af2046d4b7441c4c1d.bindPopup(popup_865f506b793b245375f461cfe051b98e)
+        ;
+
+        
+    
+    
+            var marker_eab2a8dab273764c9131fbda2b082a51 = L.marker(
+                [28.5808616, 77.3423813],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_d1ac785f598e498e3327125ed2ddaed3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eab2a8dab273764c9131fbda2b082a51.setIcon(icon_d1ac785f598e498e3327125ed2ddaed3);
+        
+    
+        var popup_eb59f322059a06ea8d1fe6a98f660d51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f87983d067bb376a952139483d264415 = $(`<div id="html_f87983d067bb376a952139483d264415" style="width: 100.0%; height: 100.0%;">Event: The Alpha Banquet Address: C-1/5, Pillar No-33, Sector 31, Noida Rating: 4.2</div>`)[0];
+                popup_eb59f322059a06ea8d1fe6a98f660d51.setContent(html_f87983d067bb376a952139483d264415);
+            
+        
+
+        marker_eab2a8dab273764c9131fbda2b082a51.bindPopup(popup_eb59f322059a06ea8d1fe6a98f660d51)
+        ;
+
+        
+    
+    
+            var marker_19d71f5c9a05605ed4d8433db9d9546b = L.marker(
+                [28.5811489, 77.34278139999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_ace38512443159e6d7d867e9b59aa3d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_19d71f5c9a05605ed4d8433db9d9546b.setIcon(icon_ace38512443159e6d7d867e9b59aa3d7);
+        
+    
+        var popup_3f3af7e19edbe4f9642c1f449769a54b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab8e93ec444c6fe056799525ecd40541 = $(`<div id="html_ab8e93ec444c6fe056799525ecd40541" style="width: 100.0%; height: 100.0%;">Event: Golden Leaf Noida Address: C1/7 & 1/8, C-Block, Sector 31, Noida Rating: 4.5</div>`)[0];
+                popup_3f3af7e19edbe4f9642c1f449769a54b.setContent(html_ab8e93ec444c6fe056799525ecd40541);
+            
+        
+
+        marker_19d71f5c9a05605ed4d8433db9d9546b.bindPopup(popup_3f3af7e19edbe4f9642c1f449769a54b)
+        ;
+
+        
+    
+    
+            var marker_163407da3780872aecc4f48358600d9d = L.marker(
+                [28.5778442, 77.38746429999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_caa680fb4d542de636c1b9f74088e454 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_163407da3780872aecc4f48358600d9d.setIcon(icon_caa680fb4d542de636c1b9f74088e454);
+        
+    
+        var popup_e60d1525b3cc052f026095d578763a7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b48d01f7aa8fadd9fa9093d18b5cccf0 = $(`<div id="html_b48d01f7aa8fadd9fa9093d18b5cccf0" style="width: 100.0%; height: 100.0%;">Event: Lotus Grandeur Address: H9GP+WXJ, Supertech Capetown, Sector 74, Noida Rating: 4.4</div>`)[0];
+                popup_e60d1525b3cc052f026095d578763a7b.setContent(html_b48d01f7aa8fadd9fa9093d18b5cccf0);
+            
+        
+
+        marker_163407da3780872aecc4f48358600d9d.bindPopup(popup_e60d1525b3cc052f026095d578763a7b)
+        ;
+
+        
+    
+    
+            var marker_026fc90c7bed0446c0aa5b17f7b7abda = L.marker(
+                [28.5336437, 77.44203329999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_4827e89b770f233ad5ada46b7fc2b77e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_026fc90c7bed0446c0aa5b17f7b7abda.setIcon(icon_4827e89b770f233ad5ada46b7fc2b77e);
+        
+    
+        var popup_6a2003ee7b5988ebfc6198e0bb38d13a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06ed89b54a3c1ddc99058485f7dfb498 = $(`<div id="html_06ed89b54a3c1ddc99058485f7dfb498" style="width: 100.0%; height: 100.0%;">Event: Saffron Banquet And Party Lawn Address: Dadri Main Rd, Sector - 106, extension, Greater Noida Rating: 4.2</div>`)[0];
+                popup_6a2003ee7b5988ebfc6198e0bb38d13a.setContent(html_06ed89b54a3c1ddc99058485f7dfb498);
+            
+        
+
+        marker_026fc90c7bed0446c0aa5b17f7b7abda.bindPopup(popup_6a2003ee7b5988ebfc6198e0bb38d13a)
+        ;
+
+        
+    
+    
+            var marker_efa0fe7d4440634256e027c9194db882 = L.marker(
+                [28.5545694, 77.3373488],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_dc5b260ab2a4881b9a51971219cb2a0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_efa0fe7d4440634256e027c9194db882.setIcon(icon_dc5b260ab2a4881b9a51971219cb2a0d);
+        
+    
+        var popup_c9ee44de0daf3252fcc76e5fd67ce445 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1855e1a5b6a8a3d2a49e9fcdc0d90144 = $(`<div id="html_1855e1a5b6a8a3d2a49e9fcdc0d90144" style="width: 100.0%; height: 100.0%;">Event: Golden Leaf Banquet Address: Lower Ground Floor, 513, C Block, Sector 44, Noida Rating: 4.2</div>`)[0];
+                popup_c9ee44de0daf3252fcc76e5fd67ce445.setContent(html_1855e1a5b6a8a3d2a49e9fcdc0d90144);
+            
+        
+
+        marker_efa0fe7d4440634256e027c9194db882.bindPopup(popup_c9ee44de0daf3252fcc76e5fd67ce445)
+        ;
+
+        
+    
+    
+            var marker_a5193c7fccf2b19cdfca21ae77c2dbfe = L.marker(
+                [28.5351827, 77.3665039],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_cda32803a7d81e4138934109b4f89673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a5193c7fccf2b19cdfca21ae77c2dbfe.setIcon(icon_cda32803a7d81e4138934109b4f89673);
+        
+    
+        var popup_d5d28c19ab7d9cbb5d29796297ba5218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad9f81b540c2e5646ea2ea5261ed0616 = $(`<div id="html_ad9f81b540c2e5646ea2ea5261ed0616" style="width: 100.0%; height: 100.0%;">Event: Olivia Banquet Address: HA 26, RWA, Sector 104, Noida Rating: 4.5</div>`)[0];
+                popup_d5d28c19ab7d9cbb5d29796297ba5218.setContent(html_ad9f81b540c2e5646ea2ea5261ed0616);
+            
+        
+
+        marker_a5193c7fccf2b19cdfca21ae77c2dbfe.bindPopup(popup_d5d28c19ab7d9cbb5d29796297ba5218)
+        ;
+
+        
+    
+    
+            var marker_fd587a54183e427516408cd561789121 = L.marker(
+                [28.5776051, 77.3846227],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_f48b889ec4a37b8861f2cdfb2ce3bc0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd587a54183e427516408cd561789121.setIcon(icon_f48b889ec4a37b8861f2cdfb2ce3bc0e);
+        
+    
+        var popup_4cc390ff30ff9ee70eb77b37bb66132c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21ed8baddeb520a1745517f97afec2bd = $(`<div id="html_21ed8baddeb520a1745517f97afec2bd" style="width: 100.0%; height: 100.0%;">Event: Moon Cloud Banquet- Wedding Venue in Noida Address: near felix Hospital, Sector 75, Noida Rating: 4.2</div>`)[0];
+                popup_4cc390ff30ff9ee70eb77b37bb66132c.setContent(html_21ed8baddeb520a1745517f97afec2bd);
+            
+        
+
+        marker_fd587a54183e427516408cd561789121.bindPopup(popup_4cc390ff30ff9ee70eb77b37bb66132c)
+        ;
+
+        
+    
+    
+            var marker_5d11d8d238fbb8ce8da7326bf9d4f006 = L.marker(
+                [28.5600584, 77.3696652],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_7845bb9ccfe78ff83ae71401b539191c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5d11d8d238fbb8ce8da7326bf9d4f006.setIcon(icon_7845bb9ccfe78ff83ae71401b539191c);
+        
+    
+        var popup_8208a03cc2a27c7108b66b38380a79b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6039b18a45db3528b462eb0cc8afa092 = $(`<div id="html_6039b18a45db3528b462eb0cc8afa092" style="width: 100.0%; height: 100.0%;">Event: Milantra Green Banquet Hall Noida Address: Sector-48, Barola, Main, Dadri Main Rd, opp. pilar no 25, D Block, Sector 49, Noida Rating: 4.7</div>`)[0];
+                popup_8208a03cc2a27c7108b66b38380a79b2.setContent(html_6039b18a45db3528b462eb0cc8afa092);
+            
+        
+
+        marker_5d11d8d238fbb8ce8da7326bf9d4f006.bindPopup(popup_8208a03cc2a27c7108b66b38380a79b2)
+        ;
+
+        
+    
+    
+            var marker_9f9f8f60d6b1f084d42a0b221e9745fa = L.marker(
+                [28.5411812, 77.36898459999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_49c5b096122b753795024669d9984fed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9f9f8f60d6b1f084d42a0b221e9745fa.setIcon(icon_49c5b096122b753795024669d9984fed);
+        
+    
+        var popup_25e517a19cd5be0f3e4bd41f09a0855d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c10365d4827896ae10b9a6c93371b61 = $(`<div id="html_0c10365d4827896ae10b9a6c93371b61" style="width: 100.0%; height: 100.0%;">Event: Rajdhani Party Lawn Address: Sector 104, Opposite Pathways School, Village, Hazipur, Noida Rating: 4.2</div>`)[0];
+                popup_25e517a19cd5be0f3e4bd41f09a0855d.setContent(html_0c10365d4827896ae10b9a6c93371b61);
+            
+        
+
+        marker_9f9f8f60d6b1f084d42a0b221e9745fa.bindPopup(popup_25e517a19cd5be0f3e4bd41f09a0855d)
+        ;
+
+        
+    
+    
+            var marker_939697f809ea9549047a09d0c6e96dec = L.marker(
+                [28.5412852, 77.3694967],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_e16ffeb5f3feaf42cf8410ba044edc32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_939697f809ea9549047a09d0c6e96dec.setIcon(icon_e16ffeb5f3feaf42cf8410ba044edc32);
+        
+    
+        var popup_19191d4f044a58aed820a304d4898841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_414368b918d4dd063ea3d33801cd5cbb = $(`<div id="html_414368b918d4dd063ea3d33801cd5cbb" style="width: 100.0%; height: 100.0%;">Event: Rajdhani Banquets Address: G9R9+GR6, D Block, Hazipur, Sector 104, Noida Rating: 4</div>`)[0];
+                popup_19191d4f044a58aed820a304d4898841.setContent(html_414368b918d4dd063ea3d33801cd5cbb);
+            
+        
+
+        marker_939697f809ea9549047a09d0c6e96dec.bindPopup(popup_19191d4f044a58aed820a304d4898841)
+        ;
+
+        
+    
+    
+            var marker_a22c5303437f47e5155028d589099003 = L.marker(
+                [28.5145627, 77.3749361],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_a3437d9d81688d5281c3872b475e430d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a22c5303437f47e5155028d589099003.setIcon(icon_a3437d9d81688d5281c3872b475e430d);
+        
+    
+        var popup_1bc5c35432a701994fa258ad17085b3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2954d6c5b5d7052a49704a27f87f383 = $(`<div id="html_a2954d6c5b5d7052a49704a27f87f383" style="width: 100.0%; height: 100.0%;">Event: The Lavanya by Diamond crown banquets Address: Eminence Infra Urbtech Matrix Tower B-4, Block B, Sector 132, Noida Rating: 4.4</div>`)[0];
+                popup_1bc5c35432a701994fa258ad17085b3c.setContent(html_a2954d6c5b5d7052a49704a27f87f383);
+            
+        
+
+        marker_a22c5303437f47e5155028d589099003.bindPopup(popup_1bc5c35432a701994fa258ad17085b3c)
+        ;
+
+        
+    
+    
+            var marker_e5a91de4e2aa6e10e35b60b9be29246e = L.marker(
+                [28.5813724, 77.39409719999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_608df52d055720a98c4c048f0f1d8ce0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e5a91de4e2aa6e10e35b60b9be29246e.setIcon(icon_608df52d055720a98c4c048f0f1d8ce0);
+        
+    
+        var popup_54d564383066e9dfda1dcd73b5b1e5a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d5285974b6b0b6dab5268bc1ddb45fa = $(`<div id="html_9d5285974b6b0b6dab5268bc1ddb45fa" style="width: 100.0%; height: 100.0%;">Event: Tivoli Lotus Court Hotels & Banquets | Best Banquet Hall in Noida Address: Sector 117 Main Rd Tivoli Lotus Court Near, 1, Internal Capetown Society Rd, Sector 74, Noida Rating: 4.7</div>`)[0];
+                popup_54d564383066e9dfda1dcd73b5b1e5a8.setContent(html_9d5285974b6b0b6dab5268bc1ddb45fa);
+            
+        
+
+        marker_e5a91de4e2aa6e10e35b60b9be29246e.bindPopup(popup_54d564383066e9dfda1dcd73b5b1e5a8)
+        ;
+
+        
+    
+    
+            var marker_079198b90cdb42d384dedcfa00e298e4 = L.marker(
+                [28.5790518, 77.3696169],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_8158b21167ec490bb6a7275f7bd117b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_079198b90cdb42d384dedcfa00e298e4.setIcon(icon_8158b21167ec490bb6a7275f7bd117b7);
+        
+    
+        var popup_36406a311952b685424d5cae71ac7f92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f668fb3ce3ae4ec950dfee755310d95 = $(`<div id="html_9f668fb3ce3ae4ec950dfee755310d95" style="width: 100.0%; height: 100.0%;">Event: Golden Dream Banquet Address: Khasra No 607, near Diamond Crown, Hoshiyarpur, Sector 51, Noida Rating: 4.5</div>`)[0];
+                popup_36406a311952b685424d5cae71ac7f92.setContent(html_9f668fb3ce3ae4ec950dfee755310d95);
+            
+        
+
+        marker_079198b90cdb42d384dedcfa00e298e4.bindPopup(popup_36406a311952b685424d5cae71ac7f92)
+        ;
+
+        
+    
+    
+            var marker_9a4033dd99d1e5e176492399e8c6dd45 = L.marker(
+                [28.5109206, 77.3755851],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_cc024a3ba1d8fc9675b38d9fa0787723 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9a4033dd99d1e5e176492399e8c6dd45.setIcon(icon_cc024a3ba1d8fc9675b38d9fa0787723);
+        
+    
+        var popup_3741c22b347282c41221d28e1d5d3877 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fe37890ca4def35e0530d2d16362388 = $(`<div id="html_2fe37890ca4def35e0530d2d16362388" style="width: 100.0%; height: 100.0%;">Event: J. S. Garden Banquet & Rooms By Khanak Address: A36, Block B, Sector 132, Noida Rating: 4.3</div>`)[0];
+                popup_3741c22b347282c41221d28e1d5d3877.setContent(html_2fe37890ca4def35e0530d2d16362388);
+            
+        
+
+        marker_9a4033dd99d1e5e176492399e8c6dd45.bindPopup(popup_3741c22b347282c41221d28e1d5d3877)
+        ;
+
+        
+    
+    
+            var marker_999a82aaf1b102adc9477d90bb60c8e8 = L.marker(
+                [28.5794794, 77.3711005],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_4ac8490c660983eda3d6c6a070653ca1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_999a82aaf1b102adc9477d90bb60c8e8.setIcon(icon_4ac8490c660983eda3d6c6a070653ca1);
+        
+    
+        var popup_8caa9e4cc176310f6002eff3e9d8bc92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fcfeaecae2539634f42b449b877231f = $(`<div id="html_3fcfeaecae2539634f42b449b877231f" style="width: 100.0%; height: 100.0%;">Event: Silver Hall Address: Diamond Crown, Sector 51, Noida Rating: 4.3</div>`)[0];
+                popup_8caa9e4cc176310f6002eff3e9d8bc92.setContent(html_3fcfeaecae2539634f42b449b877231f);
+            
+        
+
+        marker_999a82aaf1b102adc9477d90bb60c8e8.bindPopup(popup_8caa9e4cc176310f6002eff3e9d8bc92)
+        ;
+
+        
+    
+    
+            var marker_b5c6317e1dd957da82e6f0afa6200d0e = L.marker(
+                [28.5040865, 77.3853386],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_56a06eaa1015b51fab8618a2e9f3a91d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b5c6317e1dd957da82e6f0afa6200d0e.setIcon(icon_56a06eaa1015b51fab8618a2e9f3a91d);
+        
+    
+        var popup_3596c39980d90b97897ac9cafe9c274c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2061264c6ec5c34b66fc2dda097e0f21 = $(`<div id="html_2061264c6ec5c34b66fc2dda097e0f21" style="width: 100.0%; height: 100.0%;">Event: The Mayfair Grand Address: G93P+J3M, Sector 134, Noida Rating: 4.4</div>`)[0];
+                popup_3596c39980d90b97897ac9cafe9c274c.setContent(html_2061264c6ec5c34b66fc2dda097e0f21);
+            
+        
+
+        marker_b5c6317e1dd957da82e6f0afa6200d0e.bindPopup(popup_3596c39980d90b97897ac9cafe9c274c)
+        ;
+
+        
+    
+    
+            var marker_a0c8a2ccc984292d2d3eedb937aec5bd = L.marker(
+                [28.5826132, 77.44218819999999],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_bc15dd1d0fee58b314d105dce4373d22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0c8a2ccc984292d2d3eedb937aec5bd.setIcon(icon_bc15dd1d0fee58b314d105dce4373d22);
+        
+    
+        var popup_ee17222a9320d55bceffddb5712f6327 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8feacc1e4ab259f072310bfa304a138e = $(`<div id="html_8feacc1e4ab259f072310bfa304a138e" style="width: 100.0%; height: 100.0%;">Event: JS Garden Address: JS Garden, Chaturbhuj Chauraha Opposite Panchmukhi Hanuman Mandir, Sector 2 Greater Noida, Noida Rating: 3.8</div>`)[0];
+                popup_ee17222a9320d55bceffddb5712f6327.setContent(html_8feacc1e4ab259f072310bfa304a138e);
+            
+        
+
+        marker_a0c8a2ccc984292d2d3eedb937aec5bd.bindPopup(popup_ee17222a9320d55bceffddb5712f6327)
+        ;
+
+        
+    
+    
+            var marker_3dd914492875177149a8a74b23d9b255 = L.marker(
+                [28.5160686, 77.3968543],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_3b609c24f41b3ad1d49d53d14616987e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3dd914492875177149a8a74b23d9b255.setIcon(icon_3b609c24f41b3ad1d49d53d14616987e);
+        
+    
+        var popup_bb3b0f80a663e93a09d2b2d8b3d54510 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c018d487ec9eb48f66179a7f42024c6f = $(`<div id="html_c018d487ec9eb48f66179a7f42024c6f" style="width: 100.0%; height: 100.0%;">Event: SWAGATH BANQUET, SECTOR-104 NOIDA Address: STARLING MALL 5TH FLOOR OPP PATHWAY SCHOOL NOIDA SEC-104 Rating: 3.9</div>`)[0];
+                popup_bb3b0f80a663e93a09d2b2d8b3d54510.setContent(html_c018d487ec9eb48f66179a7f42024c6f);
+            
+        
+
+        marker_3dd914492875177149a8a74b23d9b255.bindPopup(popup_bb3b0f80a663e93a09d2b2d8b3d54510)
+        ;
+
+        
+    
+    
+            var marker_775874e0896ab59ee1700f34c6d6188d = L.marker(
+                [28.5802881, 77.3583091],
+                {
+}
+            ).addTo(map_104d85feb3a983ffd96a328cc75e96aa);
+        
+    
+            var icon_cc65e4c7c2555f97d0d56761f1e45bd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_775874e0896ab59ee1700f34c6d6188d.setIcon(icon_cc65e4c7c2555f97d0d56761f1e45bd6);
+        
+    
+        var popup_61c9e46350dd294501c895921ebcef70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e070af51dcd2fa0d879a1f1888e7fdaa = $(`<div id="html_e070af51dcd2fa0d879a1f1888e7fdaa" style="width: 100.0%; height: 100.0%;">Event: Banquet Halls Address: Morna, Sector 51, Noida Rating: 4.3</div>`)[0];
+                popup_61c9e46350dd294501c895921ebcef70.setContent(html_e070af51dcd2fa0d879a1f1888e7fdaa);
+            
+        
+
+        marker_775874e0896ab59ee1700f34c6d6188d.bindPopup(popup_61c9e46350dd294501c895921ebcef70)
+        ;
+
+        
+    
+</script>
+</html>

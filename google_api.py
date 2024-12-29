@@ -14,9 +14,7 @@ def get_place_data(location, radius=5000):
     url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={location}&radius={radius}&key={API_KEY}"
     response = requests.get(url)
     return response.json().get('results', [])
-m=get_place_data('40.748817,-73.985428')
-print(m)
-exit(0)
+
 # Function to preprocess data
 def preprocess_data(data):
     features = []
